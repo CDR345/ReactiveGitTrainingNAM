@@ -36,7 +36,7 @@ public class TestStrings {
 
         String str3="eve";
         String rev ="";
-
+        str3=str3.replaceAll("\\s+","");
       for(int i=str3.length()-1;i>=0;i--){
           rev=rev+str3.charAt(i);
       }
