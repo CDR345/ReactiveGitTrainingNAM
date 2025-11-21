@@ -1,4 +1,11 @@
 package com.neueda.di_config_bean_demo.service;
 
-public class NightGreetingService {
+import org.springframework.stereotype.Component;
+
+//@Component
+public class NightGreetingService implements GreetingService {
+    @Override
+    public String greet() {
+        return "Good Night! Sleep well!";
+    }
 }
